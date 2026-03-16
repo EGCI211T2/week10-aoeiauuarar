@@ -12,7 +12,7 @@ void display (struct Time );
 //3. display functions
 
 void getTime (struct Time &t){
-	cout<<"Input Time(H M S)";
+	cout<<"Input Time(H M S) : ";
 	cin>>t.h>>t.m>>t.s;
 }
 
@@ -39,5 +39,5 @@ struct Time subtract (struct Time t2,struct Time t1){
 }
 
 void display (struct Time t){
-	cout<<setfill('0')<<setw(2)<<t.h<<":"<<setfill('0')<<setw(2)<<t.m<<":"<<setfill('0')<<setw(2)<<t.s;
+	cout<<setfill('0')<<setw(2)<<t.h<<":"<<setfill('0')<<setw(2)<<t.m<<":"<<setfill('0')<<setw(2)<<t.s<<endl;
 }
