@@ -7,11 +7,13 @@ using namespace std;
 
 int main(){
     struct Time t1,t2,t3;
-    cout<<"What time was it?";
-    getTime(t1);
-    cout<<"What time is it now?";
-    getTime(t2);
-    t3=subtract(t2,t1); //t3=t2-t1
+    cout<<"What time was it?"<<endl;
+    t1.getTime();
+    cout<<"What time is it now?"<<endl;
+    t2.getTime();
+    t3=t2.subtract(t1);//t3=t2-t1
     cout<<"Time diff is ";
-    display(t3);
+    //t1.display();
+    //t2.display();
+    t3.display();
 }
